@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'my-defined-label' }
 
     stages {
         stage('Teste') {
