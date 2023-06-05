@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     dockerapp = docker.build(
-                        "cassielrattescortez/api-produto:${env.BUILD_ID}",
+                        "cassielrattescortez/pedelogo-catalogo:${env.BUILD_ID}",
                         "-f ./src/PedeLogo.Catalogo.Api/Dockerfile ."
                         )
                 }
