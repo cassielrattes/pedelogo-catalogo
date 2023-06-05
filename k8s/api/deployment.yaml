@@ -23,7 +23,7 @@ spec:
             ]
       containers:
         - name: api
-          image: cassielrattescortez/pedelogo-catalogo:v1.0.0
+          image: cassielrattescortez/api-produto:{{tag}}
           ports:
             - containerPort: 80
               name: http
