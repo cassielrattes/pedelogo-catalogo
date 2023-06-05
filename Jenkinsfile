@@ -1,10 +1,20 @@
 pipeline {
-    agent { label 'my-defined-label' }
+    agent any
 
     stages {
-        stage('Teste') {
+        stage('Build') {
             steps {
-                echo 'Teste'
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
             }
         }
     }
